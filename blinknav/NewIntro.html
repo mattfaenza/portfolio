@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Blink Nav HTML Prototype: Intro</title>
+<link href="mobile_interface_catherine.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="jquery-ui.css">
+ <script src="jquery-1.10.2.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script>
+  $(function() {
+    var availableTags = [
+      "College St",
+	  "St. George St",
+	  "Bloor St West",
+	  "Yonge St",
+	  "Spadina Av"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+</head>
+<body class="center">
+	<span style="color:#2f4866">
+	<div id="size" class="center"> 
+	<div id="widget" class="ui-widget">
+   <input size="52" placeholder="Starting from: Current Location" type="text" >
+  <input placeholder="Please Enter a Destination" id="tags" size="52" class="ui-autocomplete-input", autocomplete="off"></input>
+  </div>
+      	<a href="settings_intro.html">
+
+			<img src="gear-icon-hi2.png" align=right style="width:40px;height:40px;margin-right:5px;margin-top:5px;">
+
+	</a>
+  <div id="buttons">
+
+	<a class="right" href="Newrank.html">
+
+			<img src="Go.png" align=right style="width:60px;height:40px;">
+
+	</a>   
+    </div>
+	</div>
+    </span>
+</body>
+</html>
